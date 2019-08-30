@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--여기서부터 데이터 바인딩 양식 시작-->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+        <variable
+            name="activity"
+            type="com.example.dbsdn.mychat.liveVideoBroadcaster.LiveVideoBroadcasterActivity" />
+    </data>
+    <!--여기까지가 데이터 바인딩 양식 다른 액티비티에서도 적용할것.-->
+<LinearLayout
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:id="@+id/chatlinear"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/chatlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_blue_dark"
+            android:paddingTop="8dp"
+            tools:text="닉네임" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/background_dark"
+        tools:text="채팅내용" />
+</LinearLayout>
+</layout>

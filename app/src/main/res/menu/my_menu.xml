@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_favorites"
+        android:icon="@drawable/logo2"
+        android:title="favo"
+        app:showAsAction="always"
+        />
+
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/action_movie"
+        android:title="영화"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_tv"
+        android:title="TV"
+        app:showAsAction="never"/>
+    <item android:id="@+id/action_settings"
+        android:title="화면설정"
+        app:showAsAction="never"/>
+
+</menu>

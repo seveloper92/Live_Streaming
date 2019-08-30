@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--여기서부터 데이터 바인딩 양식 시작-->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="activity"
+            type="com.example.dbsdn.mychat.SignActivity" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SignActivity">
+    <!--여기까지가 데이터 바인딩 양식 다른 액티비티에서도 적용할것-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+        <!--회원가입_아이디 입력 Layout 및 EditText-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/Layout_Enter_Id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="15"
+            app:counterOverflowTextAppearance="@style/CounterOverFlow"
+            app:counterTextAppearance="@style/CounterText"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/ErrorText"
+            app:hintTextAppearance="@style/HintText">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/IDedit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:hint="아이디"
+                android:maxLines="1"
+                android:paddingLeft="15dp"
+                android:paddingRight="13dp"></android.support.design.widget.TextInputEditText>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/Button_Id_Check"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded2"
+            android:text="아이디 중복확인" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/EditText_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            app:errorEnabled="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/EMAIL_edit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:hint="이메일"
+                android:paddingLeft="15dp"
+                android:paddingRight="13dp"></android.support.design.widget.TextInputEditText>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <!--회원가입_비밀번호 입력 Layout 및 EditText-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/Layout_Enter_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            app:passwordToggleEnabled="true">
+
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/PWedit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:hint="비밀번호"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:paddingLeft="15dp"
+                android:paddingRight="13dp"></android.support.design.widget.TextInputEditText>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <!--아이디 중복체크-->
+        <ImageView
+            android:id="@+id/ImageView_Password_Check"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="left" />
+
+
+        <!--회원가입_비밀번호확인 입력 Layout 및 EditText-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/Layout_Password_Check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            app:passwordToggleEnabled="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/PW_CK_edit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:hint="비밀번호 확인"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:paddingLeft="15dp"
+                android:paddingRight="13dp"></android.support.design.widget.TextInputEditText>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <!--남/여 체크-->
+
+
+        <!--회원가입 완료-->
+        <Button
+            android:id="@+id/Button_Sign_Up"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded2"
+            android:text="회원가입" />
+    </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</layout>

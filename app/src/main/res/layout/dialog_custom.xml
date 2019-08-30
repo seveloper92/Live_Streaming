@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="24dp"
+        android:text="오픈 채팅방 만들기"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:paddingStart="24dp"
+        tools:ignore="RtlSymmetry" />
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/findPwDialogNameTi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        >
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/fn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="아이디"
+            android:inputType="textPersonName"
+            android:textColorHint="#42000000"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+    <TextView
+        android:text="채팅방 이름을 추가해 주세요!"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/fnc"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+
+            android:clickable="true"
+            android:gravity="center"
+            android:text="취소"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/fnbtn"
+
+            android:clickable="true"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="생성"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+</LinearLayout>

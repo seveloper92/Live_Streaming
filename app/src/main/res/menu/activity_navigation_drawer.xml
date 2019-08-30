@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_openchat"
+            android:icon="@drawable/chatlogo"
+            android:title="오픈 채팅방" />
+        <item
+            android:id="@+id/nav_moviechat"
+            android:icon="@drawable/logo2"
+            android:title="LIVE 방송" />
+
+    </group>
+
+    <item android:title="GAME">
+        <menu>
+            <item
+                android:id="@+id/nav_game"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="슈팅 게임" />
+        </menu>
+    </item>
+
+</menu>

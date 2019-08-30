@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "649500883786",
+    "firebase_url": "https://mchat-2c750.firebaseio.com",
+    "project_id": "mchat-2c750",
+    "storage_bucket": "mchat-2c750.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649500883786:android:34713d6852c79b44",
+        "android_client_info": {
+          "package_name": "com.example.dbsdn.mychat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "649500883786-utno74do8uc57e72chm41daggi7o7thg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzbKMAeqxS9fG21CWsnEDrJ3RpcH_fwiI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
